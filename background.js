@@ -4,13 +4,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     return { cancel: true };
   },
   {
-    urls: [
-      "*://*.doubleclick.net/*",
-      "*://*.googleadservices.com/*",
-      "*://*.googlesyndication.com/*",
-      "*://*.moat.com/*",
-      "*://*.akamaized.net/*",
-    ],
+    urls: ["*://*.akamaized.net/*"],
   },
   ["blocking"]
 );
