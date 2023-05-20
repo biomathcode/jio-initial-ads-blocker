@@ -23,3 +23,7 @@ chrome.webRequest.onBeforeRequest.addListener(
   ["blocking"]
 );
 ```
+
+### how it works for Jio?
+
+Jio has it `jioAds.js`  which is responsible for the initial ad, we see. We are blocking the cdn of `akamaized.net`
