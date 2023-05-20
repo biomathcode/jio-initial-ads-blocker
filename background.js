@@ -1,13 +1,16 @@
 chrome.webRequest.onBeforeRequest.addListener(
-  function(details) { 
+  function (details) {
     // console.log(details)
-    return {cancel: true}; 
+    return { cancel: true };
   },
-  {urls: 
-    ["*://*.doubleclick.net/*",
-    "*://*.googleadservices.com/*",
-    "*://*.googlesyndication.com/*",
-    "*://*.moat.com/*"]
+  {
+    urls: [
+      "*://*.doubleclick.net/*",
+      "*://*.googleadservices.com/*",
+      "*://*.googlesyndication.com/*",
+      "*://*.moat.com/*",
+      "*://*.akamaized.net/*",
+    ],
   },
   ["blocking"]
 );
